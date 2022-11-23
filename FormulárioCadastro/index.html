@@ -6,23 +6,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro</title>
 </head>
-<body>
-    <form action="">
+<body>      
+    
+    <form>
+
         <label for="nome">Nome</label>
-        <input type="text" id="nome" placeholder="Digite seu nome aqui...">
+        <input type="text" id="nome" name="nome" placeholder="Digite seu nome aqui..." required="true">
+
         <label for="email">Email</label>
-        <input type= "email" name="" id="email" placeholder="Digite seu email aqui...">
-        <input type="text" placeholder="Fale mais sobre você aqui...">
+        <input type="email" id="email" name="email" placeholder="Digite seu email aqui" required="true">
+
+        <label for="descricao"></label>
+        <input type="text" id="descricao" name="descricao" placeholder="Fale mais sobre você aqui..." maxlength="200" required="true">
+
+        <label for="senha">Senha</label>
+        <input type="password" id="senha" name="senha" placeholder="">
         
-        <input type="password" name="" id="" placeholder="Digite sua senha aqui...">
-        <input type="password"  placeholder="Confirme sua senha aqui...>
+        <p>Deseja receber novidades em seu email?</p>
+        <label for="simEmail">Sim</label>        
+        <input id="simEmail"type="radio" name="metodoDeContato" value="simEmail" required>
+        <label for="naoEmail">Não</label>
+        <input id="naoEmail"type="radio" name="metodoDeContato" value="naoEmail" required>
 
 
-      <button>
-        Cadastrar
-      </button>
-
+        <button type="submit">Cadastrar</button>
+                
+   
     </form>
+
+
+     
+
+
     
 </body>
 </html>
