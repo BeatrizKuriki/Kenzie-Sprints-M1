@@ -42,7 +42,14 @@
     margin: 1rem auto;
     border-radius: 1rem;
     width: 90%;
+    border: none;
+    background-color: rgb(231, 226, 226);
 
+}
+
+.card input:focus{
+    border: #000000;
+    background-color: #fff;
 }
 
 
@@ -53,8 +60,13 @@
     width: 100%;
     border-radius: 1rem;
     color: #fff;
-    background-color: rgb(61, 61, 220);
+    background-color: #1971C2;
     outline: none;
     border: none;
     font-size: 20px;
+}
+
+.card button:hover{
+    background-color:#1864AB;
+
 }
