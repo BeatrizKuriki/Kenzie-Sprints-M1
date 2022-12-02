@@ -1,0 +1,60 @@
+
+
+*{
+    margin: 0;
+}
+
+.container{
+    border: 2px solid rgb(236, 226, 226);
+    background-color: aliceblue;
+    width: 500px;
+    margin: 5rem auto;
+    padding: 1rem;
+    height: 50vh;
+    border-radius: 1.5rem;
+
+}
+.card{
+    border: 2px solid rgb(236, 226, 226);;
+    width: 400px;
+    padding: 1rem;
+    margin: 1.5rem auto;    
+    height: 40vh;
+    border-radius: 1rem;
+}
+
+.card h1{   
+    text-align: center;
+    padding: 1rem;
+    margin: 0 auto;
+    
+}
+
+.card p{
+    text-align: left;
+    margin-left: 1rem;
+}
+
+
+
+.card input{
+    padding: 1rem;
+    margin: 1rem auto;
+    border-radius: 1rem;
+    width: 90%;
+
+}
+
+
+
+.card button{
+    margin: 3rem auto;
+    padding: 1rem;
+    width: 100%;
+    border-radius: 1rem;
+    color: #fff;
+    background-color: rgb(61, 61, 220);
+    outline: none;
+    border: none;
+    font-size: 20px;
+}
