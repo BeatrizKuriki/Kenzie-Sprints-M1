@@ -42,6 +42,31 @@ alert(`Os valores foram trocados agora varA tem valor de ${varA} e varB tem valo
 //EXERCÍCIO 4
 
 alert('exercício 4');
+let quantidadeFitas = Number(prompt('Qual a quantidade de fitas que a locadora possui?'));
+let valorCobrado = Number(prompt('Qual o valor de cada aluguel?'));
+
+let faturamento = (quantidadeFitas /3) * 12 *valorCobrado;
+
+let multa = (valorCobrado * 10)/100;
+let valorGanhoMultasPorFita = valorCobrado += multa;
+
+let quantidadeTotalMultas = ((quantidadeFitas /3) * 10 ) /100;
+let valorGanhoMultasMes = quantidadeTotalMultas * valorGanhoMultasPorFita;
+
+//Sabendo ainda que 2% das fitas se estragam ao longo do ano,
+// e um décimo do total é comprado para reposição, 
+//exiba a quantidade de fitas que a locadora terá no final do ano.
+//AQUI FAÇO 2% DIVIDIDO POR 10 E DAÍ MULTIPLICO PELA QUANTIDADE DE FITAS
+//PARA CHEGAR NO RESULTADO
+
+let quantidadeFitasFimAno = quantidadeFitas +(quantidadeFitas * 0.002);
+ alert(` O faturamento anual é de R$ ${faturamento.toFixed(2)}`);
+ alert(`O valor ganho por mês com multas é de R$ ${valorGanhoMultasMes.toFixed(2)}`);
+alert(` A quantidade de fitas no fim do ano é de: ${quantidadeFitasFimAno}`);
+
+
+
+
 
 
 
