@@ -11,3 +11,15 @@ let desconto = valorPagar * 0.1;
 let novoValorPagar = valorPagar - desconto;
 
 alert(`O valor a pagar com desconto de 10% é de: R$ ${novoValorPagar.toFixed(2)}`);
+
+//==========================================================================================
+
+//EXERCÍCIO 2
+
+alert('exercício 2');
+
+let valorProduto = prompt('Qual o valor do produto?');
+let desconto9 = (valorProduto * 9)/100;
+valorProduto -= desconto9;
+
+alert(`O valor do produto com desconto de 9% é: R$ ${valorProduto.toFixed(2)}`)
