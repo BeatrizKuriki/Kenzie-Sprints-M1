@@ -65,9 +65,8 @@ function conversaoFahrenheit(){
     let grausFahrenheit = 0;
     for(let i = 10; i <= 100; i+=10){
         grausFahrenheit = i * 1.8 + 32;
-        console.log(`${i}C = ${grausFahrenheit}F`)
+        console.log(`${i}C = ${grausFahrenheit}F`);      
 
-    }
-
+    } 
 }
 conversaoFahrenheit();
