@@ -73,13 +73,12 @@ isDescendingDirection();
 console.log("---------------------------------------------------------");
 //EXERCÍCIO 7
 
+
 function toSquare(){
-    for(let i = 1; i <= 10; i++){       
-      Math.pow(i,2);     
-    }
-    
-  
-    
+    for(let i = 1; i <= 10; i++){ 
+        let resultado = i**2;       
+       console.log(resultado);
+    }    
 
 }
 
