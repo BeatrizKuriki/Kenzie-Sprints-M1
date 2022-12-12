@@ -67,7 +67,7 @@ alert(` A quantidade de fitas no fim do ano é de: ${quantidadeFitasFimAno}`);
 
 //================================================================================
 
-//EXERCÍCIO 5
+//EXERCÍCIO 6
 
 alert('exercício 5');
 
@@ -86,9 +86,27 @@ let varNum2 = numero[2];
 
 //================================================================================
 
-//EXERCICIO 6
+//EXERCICIO 6 outra resolução
+
+//let numero2 = (prompt('Digite um número no formato CDU(centena, dezena e unidade'));
+//numero2.split('');
+//numero2.reverse();
+
+//alert(numero2);
+
+//================================================================================
+
+//EXERCÍCIO 6
+alert('exercício 6');
+
+let numero3 = (prompt('Digite um número no formato CDU(centena, dezena e unidade'));
 
 
+//alert(numero[0]);
+let num = numero3[0];
+let num1 = numero3[1];
+let num2 = numero3[2];
+ alert([`centena: ${num}, dezena: ${num1}, unidades ${num2}`]);
 
 
 
