@@ -65,6 +65,31 @@ let quantidadeFitasFimAno = quantidadeFitas +(quantidadeFitas * 0.002);
 alert(` A quantidade de fitas no fim do ano é de: ${quantidadeFitasFimAno}`);
 
 
+//================================================================================
+
+//EXERCÍCIO 5
+
+alert('exercício 5');
+
+let numero = (prompt('Digite um número no formato CDU(centena, dezena e unidade'));
+
+
+//alert(numero[0]);
+let varNum = numero[0];
+let varNum1 = numero[1];
+let varNum2 = numero[2];
+ alert([varNum2, varNum1, varNum]);
+
+
+
+
+
+//================================================================================
+
+//EXERCICIO 6
+
+
+
 
 
 
