@@ -37,6 +37,43 @@ alert('Código correto!');
  }
  media = soma/quantidade;
 
- alert(`A soma dos números inteiros e positivos é igual a: ${soma} e a méida é igual a ${media} `)
+ alert(`A soma dos números inteiros e positivos é igual a: ${soma} e a média é igual a ${media} `);
+
+ //=======================================================================
+ //EXERCÍCIO 4
+ alert('exercício 4');
+let a = 0;
+let b = 0;
+let c = 0;
+let x = 0;
+
+let voto = prompt("Digite a letra correspondente ao seu candidato : A - Candidato Verde | B - Candidato Azul | C - Candidato Vermelho | X - para encerrar ");
+while(voto != 'x' || voto != 'X'){
+    if(voto == 'a' || voto == 'A'){
+        a++
+        alert('Voto registrado com sucesso ');
+       
+    }else if(voto == 'b' || voto == 'B'){
+        b++
+        alert('Voto registrado com sucesso ');
+       
+
+    }else if(voto == 'c' || voto == 'C'){
+        c++
+        alert('Voto registrado com sucesso ');  
+         
+    }else{
+        alert('Candidato não encontrado');
+       
+    }
+}
+
+alert(`Totalizando os votos: Candidato Verde teve: ${a} votos | Candidato Azul teve: ${b} votos, Candidato Vermelhor teve: ${c} votos`);
+
+
+
+
+
+
 
 
