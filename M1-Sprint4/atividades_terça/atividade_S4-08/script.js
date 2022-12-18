@@ -81,5 +81,15 @@ console.log(stringRepeater('Because I am happy.', 3));
 //EXERCÍCIO 7
 console.log('============================EXERCÍCIO 7============================');
 function stringCentralizer(palavraString, qtdRepete, elementoRepeticao){
+    let palavaStringFinal = palavraString;
+    //console.log(palavaStringFinal)
+    for(let i = 1; i <= qtdRepete; i++){
+        palavaStringFinal = elementoRepeticao + palavaStringFinal+ elementoRepeticao;
+    }
+    return palavaStringFinal;
+
     
 }
+
+
+console.log(stringCentralizer('JavaScript', 8, "#"));
