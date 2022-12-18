@@ -61,8 +61,18 @@ console.log(padEnd('kenzie', 5, 'foo'));
 
 //EXERCÍCIO 5
 console.log('============================EXERCÍCIO 5============================');
-//function subString(textoSub, posicaoInicial, posicaoFinal){
+function subString(textoSub, posicaoInicial, posicaoFinal){
+    let textoSubFinal='';
+    for(i = posicaoInicial+1; i< posicaoFinal; i++){
+        textoSubFinal += textoSub[i];
+        
 
+    }
+    return textoSubFinal;
+  
+
+}
+console.log(subString('Mozilla', 0, 4));
 
 //EXERCÍCIO 6
 console.log('============================EXERCÍCIO 6============================');
