@@ -83,4 +83,22 @@ quantidadeCaractere(nomes1);
 
 //EXERCÍCIO 5
 console.log('=====================EXERCÍCIO 5============================');
+numeros = [1,4,6,9,11,8];
 
+function soma(arr){
+    let soma = 0;
+    let novoArray = arr.slice(arr.length - 2);
+    for(let i =0; i<= novoArray.length-1; i++){
+        console.log(novoArray[i])
+        soma += novoArray[i];
+    }
+    if(soma % 2 ==0){
+        return `A soma ${soma} é múltiplo de dois`
+    }else{
+        return `A soma ${soma} não é múltiplo de dois`
+    }
+
+}
+
+
+console.log(soma(numeros));
