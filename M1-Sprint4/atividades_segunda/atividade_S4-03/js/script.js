@@ -1,22 +1,36 @@
 //EXERCÍCIO 1
 function renderUpToTwenty(){
+    let resultado = [];
     for(let i = 0; i <= 20; i++){
-        console.log(i);
+        if(i ==20 ){
+            resultado +=i;
+        }else{
+            resultado +=i +',';
+        }     
+       
     }
+    return '['+ resultado +']'
 }
 
-renderUpToTwenty();
+console.log(renderUpToTwenty());
 console.log("---------------------------------------------------------");
 //===================================================================================
 
 //EXERCÍCIO 2
 function tenInTenToAHundred(){
+    let dezEmDez = []
     for(let i = 10; i <= 100; i+=10){
-        console.log(i);
+        if(i == 100){
+            dezEmDez += i;
+        }else{
+            dezEmDez += i + ',';
+        }
+        
     }
+    return '['+ dezEmDez + ']'
 }
 
-tenInTenToAHundred();
+console.log(tenInTenToAHundred());
 
 //===================================================================================
 console.log("---------------------------------------------------------");
