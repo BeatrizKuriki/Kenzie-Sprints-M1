@@ -1,3 +1,5 @@
+console.log("--------------------EXERCÍCIO 1-------------------------------------");
+
 //EXERCÍCIO 1
 function renderUpToTwenty(){
     let resultado = [];
@@ -5,7 +7,7 @@ function renderUpToTwenty(){
         if(i ==20 ){
             resultado +=i;
         }else{
-            resultado +=i +',';
+            resultado +=i +', ';
         }     
        
     }
@@ -13,7 +15,8 @@ function renderUpToTwenty(){
 }
 
 console.log(renderUpToTwenty());
-console.log("---------------------------------------------------------");
+
+console.log("--------------------EXERCÍCIO 2-------------------------------------");
 //===================================================================================
 
 //EXERCÍCIO 2
@@ -23,7 +26,7 @@ function tenInTenToAHundred(){
         if(i == 100){
             dezEmDez += i;
         }else{
-            dezEmDez += i + ',';
+            dezEmDez += i + ', ';
         }
         
     }
@@ -33,67 +36,101 @@ function tenInTenToAHundred(){
 console.log(tenInTenToAHundred());
 
 //===================================================================================
-console.log("---------------------------------------------------------");
+console.log("--------------------EXERCÍCIO 3-------------------------------------");
 
 //EXERCÍCIO 3
 function oodUpToTwenty(){
+    let impar = [];
     for(let i = 0; i <= 20; i++){
         if(i % 2 != 0){
-            console.log(i);
+            if(i == 19){
+                impar +=i;
+            }else{
+                impar += i + ', ';
+            }
         }
     }
+    return '['+ impar +']'
 }
 
-oodUpToTwenty();
+console.log(oodUpToTwenty());
 
 //===================================================================================
-console.log("---------------------------------------------------------");
+console.log("--------------------EXERCÍCIO 4-------------------------------------");
 //EXERCÍCIO 4
 
 function evenUpToTwenty(){
+    let par = [];
     for(let i = 0; i <= 20; i++){
         if(i % 2 == 0){
-            console.log(i);
-        }
-    }    
-}
+            if(i==20){
+                par += i;
+            }else{
+            par += i+', '
+            }        
+        }   
+            
+    }
+    return '['+par+']'
+}    
 
-evenUpToTwenty();
+
+console.log(evenUpToTwenty());
 
 //===================================================================================
-console.log("---------------------------------------------------------");
+console.log("--------------------EXERCÍCIO 5-------------------------------------");
 
 //EXERCÍCIO 5
 function fromNegativeToPositive(){
+    let decrementar = [];
     for(let i = -10; i <= 0 ; i++){
-        console.log(i);
+        if(i ==0){
+            decrementar += i;
+        }else{
+            decrementar += i + ', '
+        }
+        
     }
+    return '[' + decrementar + ']'
 }
 
-fromNegativeToPositive();
+console.log(fromNegativeToPositive());
 //===================================================================================
 //EXERCÍCIO 6
-console.log("---------------------------------------------------------");
+console.log("--------------------EXERCÍCIO 6-------------------------------------");
 function isDescendingDirection(){
+    let descending = [];
     for(let i = 10; i >= 0; i--){
-        console.log(i);
+        if(i ==0){
+            descending += i;
+        }else{
+            descending += i + ', '
+        }
+        
     }
+    return '['+ descending + ']'
 }
 
 
-isDescendingDirection();
+console.log(isDescendingDirection());
 
 //===================================================================================
-console.log("---------------------------------------------------------");
+console.log("--------------------EXERCÍCIO 7-------------------------------------");
 //EXERCÍCIO 7
 
 
 function toSquare(){
+    let arrSquare = []
     for(let i = 1; i <= 10; i++){ 
-        let resultado = i**2;       
-       console.log(resultado);
+        if(i==10){
+            arrSquare += i**2;
+        }else{
+            arrSquare += i**2 + ', '
+        }         
+       
     }    
+    return '[' + arrSquare +']'
 
 }
 
-toSquare();
+console.log(toSquare());
