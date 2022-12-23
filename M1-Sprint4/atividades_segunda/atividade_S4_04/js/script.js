@@ -1,13 +1,20 @@
+console.log("==============EXERCÍCIO 1==============================");
 //EXERCÍCIO 1
 
 function resultadoQuadrado(){
+    let resultado = []
     for(let i = 15; i <= 200; i++){
-        let resultado = Math.pow(i,2);
-        console.log(resultado);
+        if(i==200){
+            resultado += Math.pow(i,2)
+        }else{
+            resultado += Math.pow(i,2) +', ';
+        }       
+        
     }
+    return '['+resultado+']';
 }
 
-resultadoQuadrado();
+console.log(resultadoQuadrado());
 
 //=========================================================================
 //EXERCÍCIO 2
@@ -19,23 +26,30 @@ function somaNaturais(){
         resultadoSoma = resultadoSoma + i;        
 
     }    
-    console.log(resultadoSoma); 
+    return `O resultado da soma dos 100 primeiros números naturais é igual a: ${resultadoSoma}.`; 
 }
 
-somaNaturais();
+console.log(somaNaturais());
 //=========================================================================
 //EXERCÍCIO 3
 console.log("==============EXERCÍCIO 3==============================");
 
 function divisivelPorQuatro(){
+    let diviseis = [];
     for(let i = 0; i< 200; i++){
         if(i % 4 == 0){
-            console.log(i)
+            if(i == 196){
+                diviseis += i;
+            }else{
+                diviseis +=i+', '
+            }           
+           
         }
     } 
+    return '[' + diviseis + ']'
 
 }
-divisivelPorQuatro()
+console.log(divisivelPorQuatro())
 //=========================================================================
 //EXERCÍCIO 4
 console.log("==============EXERCÍCIO 4==============================");
@@ -52,10 +66,10 @@ function resultadoSomaMedia(){
         }       
 
     }
-    console.log(`A soma é igual a ${soma} e a média é igual a ${media}`)
+    return `A soma é igual a ${soma} e a média é igual a ${media}`
 }
 
-resultadoSomaMedia();
+console.log(resultadoSomaMedia());
 
 //=========================================================================
 //EXERCÍCIO 5
@@ -63,10 +77,12 @@ console.log("==============EXERCÍCIO 5==============================");
 
 function conversaoFahrenheit(){
     let grausFahrenheit = 0;
+    let conversao = [];
     for(let i = 10; i <= 100; i+=10){
         grausFahrenheit = i * 1.8 + 32;
-        console.log(`${i}C = ${grausFahrenheit}F`);      
+        conversao.push(`${i}C = ${grausFahrenheit}F`);  
 
     } 
+    return conversao
 }
-conversaoFahrenheit();
+console.log(conversaoFahrenheit());
