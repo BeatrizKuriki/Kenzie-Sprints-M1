@@ -46,8 +46,32 @@ console.log(retornarTipoElemento(0));
 
 
 
-
-
-
 console.log('===========================EXERCÍCIO 4============================================');
 //EXERCÍCIO 4
+function removeUltimoElementoString(){
+    let ultimoElemento = listaDeElementos[listaDeElementos.length-1];
+    if(typeof ultimoElemento === 'string'){
+        listaDeElementos.pop();
+        return 'Elemento deletado com sucesso!'
+    }else{
+        return 'Falha ao remover o elemento da lista!'
+    }
+}
+    console.log(removeUltimoElementoString());
+
+console.log('===========================EXERCÍCIO 5============================================');
+//EXERCÍCIO 5
+
+function consultaPosicao(valor){
+    let posicao;
+     for(let i = 0; i<= listaDeElementos.length-1; i++){
+        if(valor == listaDeElementos[i]){  
+            posicao = i;         
+            return `O valor procurado está na posição: `+ posicao;
+        }
+        
+     }
+}
+
+console.log(consultaPosicao(10));
+
