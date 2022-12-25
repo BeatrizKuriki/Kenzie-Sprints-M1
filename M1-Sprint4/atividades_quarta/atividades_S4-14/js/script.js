@@ -65,13 +65,14 @@ console.log('===========================EXERCÍCIO 5============================
 function consultaPosicao(valor){
     let posicao;
      for(let i = 0; i<= listaDeElementos.length-1; i++){
-        if(valor == listaDeElementos[i]){  
-            posicao = i;         
-            return `O valor procurado está na posição: `+ posicao;
-        }
+        if(valor == listaDeElementos[i]){
+            posicao = i;
+            return `O valor procurado está na posição: ${posicao}`
+        }     
         
      }
+     return 'Valor não encontrado'
 }
 
-console.log(consultaPosicao(10));
+console.log(consultaPosicao(19));
 
