@@ -76,3 +76,16 @@ function consultaPosicao(valor){
 
 console.log(consultaPosicao(19));
 
+console.log('===========================EXERCÍCIO 6============================================');
+//EXERCÍCIO 6
+function removerElementoEspecifico(el){
+    let indexElemento;
+    
+        indexElemento = listaDeElementos.indexOf(el);
+        console.log(indexElemento)
+
+    }
+    
+
+removerElementoEspecifico(5);
+
