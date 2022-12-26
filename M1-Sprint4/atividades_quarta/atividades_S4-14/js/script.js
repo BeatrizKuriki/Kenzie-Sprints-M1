@@ -64,8 +64,8 @@ console.log('===========================EXERCÍCIO 5============================
 
 function consultaPosicao(valor){
     let posicao;
-     for(let i = 0; i<= listaDeElementos.length-1; i++){
-        if(valor == listaDeElementos[i]){
+     for(let i = 0; i<= listaDeElementos.length; i++){
+        if(valor === listaDeElementos[i]){
             posicao = i;
             return `O valor procurado está na posição: ${posicao}`
         }     
@@ -74,7 +74,7 @@ function consultaPosicao(valor){
      return 'Valor não encontrado'
 }
 
-console.log(consultaPosicao(19));
+console.log(consultaPosicao(9));
 
 console.log('===========================EXERCÍCIO 6============================================');
 //EXERCÍCIO 6
@@ -82,10 +82,34 @@ function removerElementoEspecifico(el){
     let indexElemento;
     
         indexElemento = listaDeElementos.indexOf(el);
-        console.log(indexElemento)
+        if(indexElemento > -1){
+            listaDeElementos.splice(indexElemento, 1);
+            return `Elemento ${el} deletado com sucesso `+ '['+ listaDeElementos+ ']';
+        }
+        return 'Elemento não encontrado'
+        
 
     }
     
 
-removerElementoEspecifico(5);
+console.log(removerElementoEspecifico(1));
+
+
+
+console.log('===========================EXERCÍCIO 7============================================');
+//EXERCÍCIO 7
+
+function inserirNaPosicaoCorreta(insereValor){
+    if(typeof insereValor == 'string'){
+        listaDeElementos.push(insereValor);
+    }else if(typeof insereValor == 'number'){
+        listaDeElementos.unshift(insereValor)
+    }
+    return `Lista atualizada com sucesso!`;
+}
+    
+
+console.log(inserirNaPosicaoCorreta(2));
+console.log(listaDeElementos);
+
 
