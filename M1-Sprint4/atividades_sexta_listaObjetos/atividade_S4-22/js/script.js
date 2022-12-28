@@ -60,7 +60,7 @@ function realPower(){
 }
 console.log(realPower());
 
-function insertNewClass(str){
+/*function insertNewClass(str){
     if(figure.classes.length > 3){
         return 'Este personagem não pode estar em mais classes!'
     for(let i = 0; i<= 3; i++){
@@ -72,4 +72,5 @@ function insertNewClass(str){
 }
 
 console.log(insertNewClass('Priest', 'Soldier', 'Player', 'Mage'));
-console.log(figure)
+console.log(figure)*/
+
