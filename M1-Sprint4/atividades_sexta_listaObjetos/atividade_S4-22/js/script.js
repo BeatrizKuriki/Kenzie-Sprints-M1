@@ -40,18 +40,25 @@ const figure = {
     power: 6, 
     allied: true  
 }
-
+console.log("=================EX 1=============================");
 function returnName(){
     return figure.name;
 }
 console.log(returnName());
 
+
+console.log("=================EX 2=============================");
 function verifyClasses(){
-    return figure.classes.join();
+    if(figure.classes.length ===1){
+        return figure.classes[0];
+    }else{
+        return figure.classes;
+    }
 }
 
 console.log(verifyClasses());
 
+console.log("=================EX 3=============================");
 function realPower(){
     if(figure.leader_trend ==true){
         return figure.power**2;
@@ -60,17 +67,31 @@ function realPower(){
 }
 console.log(realPower());
 
-/*function insertNewClass(str){
+console.log("=================EX 4=============================");
+function insertNewClass(str){
+    const classePermitida = [
+        'Warrior',
+        "Barbarious",
+        "Arch",
+        "Hunter",
+        "Survivor"
+    ]
+    const insereClasse = str;
     if(figure.classes.length > 3){
-        return 'Este personagem não pode estar em mais classes!'
-    for(let i = 0; i<= 3; i++){
-        figure.classes.push(str);
+        return 'Este personagem já atingiu o limite de classes para ser inserido'
     }
-    
-    
-}
-}
+    if(!classePermitida.includes(insereClasse)){
+        return `O personagem já pertence à classe ${str}`
+    }
+        figure.classes.push(insereClasse);
+        return ` Classe ${str} inserida`
+    }
 
-console.log(insertNewClass('Priest', 'Soldier', 'Player', 'Mage'));
-console.log(figure)*/
+    
+    console.log(insertNewClass('Warrior'))
+
+
+
+
+
 
