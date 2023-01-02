@@ -90,7 +90,15 @@ function insertNewClass(str){
     
     console.log(insertNewClass('Warrior'))
 
+    console.log("=================EX 5=============================");
 
+    function noMoreBarbarious(){
+        if(figure.allied || figure.classes.includes('Barbarious')){
+            figure.allied = false;
+            return `O ${figure.name} agora é um inimigo`
+        }
+    }
+    console.log(noMoreBarbarious())
 
 
 
