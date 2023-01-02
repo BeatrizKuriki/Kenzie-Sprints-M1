@@ -108,3 +108,32 @@ function filtraPorMarca(carros, marca){
 console.log(filtraPorMarca(carros, 'Ford'));
 
 console.log('==================EX 4=================================');
+function filtraPorAcessorio(carros, acessorios){
+  return carros.filter(carros => carros.acessorios.includes(acessorios) );
+}
+console.log(filtraPorAcessorio(carros, 'Trava'))
+
+console.log('==================EX 5=================================');
+
+function eCarrosCompleto(carros){
+  return carros.filter(carros => carros.completo)
+}
+
+console.log(eCarrosCompleto(carros));
+
+console.log('==================EX 6=================================');
+const newCar = {
+  modelo: 'Civic',
+  marca: 'Honda',
+  ano: '2018',
+  cor: 'Preta',
+  completo: true,
+  acessorios:['Alarme', 'Trava', 'Ar', 'Computador de Bordo', 'Vidro Elétrico'],
+  preco: 92500.00
+}
+function adicionaCarro(carros, newCar){
+  return carros.concat(newCar);  
+}
+console.log(adicionaCarro(carros, newCar));
+
+console.log('==================EX 7=================================');
