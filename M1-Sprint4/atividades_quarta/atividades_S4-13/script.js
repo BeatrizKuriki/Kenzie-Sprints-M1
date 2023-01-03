@@ -31,7 +31,7 @@ function acessaElemento(number) {
     
 }      
 
-console.log(acessaElemento(1));
+console.log(acessaElemento(2));
 
 
 
@@ -54,7 +54,7 @@ function testeParImpar(numero) {
 
 }
 
-console.log(testeParImpar(3));
+console.log(testeParImpar(1));
 
 
 //EXERCÍCIO 4
@@ -83,7 +83,7 @@ quantidadeCaractere(nomes1);
 
 //EXERCÍCIO 5
 console.log('=====================EXERCÍCIO 5============================');
-numeros = [1,4,6,9,11,8];
+numeros = [1,4,6,9,12,8];
 
 function soma(arr){
     let soma = 0;
@@ -102,3 +102,23 @@ function soma(arr){
 
 
 console.log(soma(numeros));
+
+//EXERCÍCIO 6
+console.log('=====================EXERCÍCIO 6============================');
+
+let arrNomes = ['Pedro', 'Rafael', 'José', 'Carla', 'Maria', 'Josef', 'Raquel'];
+
+function testaNome(nome, num){
+    arr = arrNomes;
+    let verificaNome;
+    for(let i =0; i<=arr.length; i++){
+        if(verificaNome == arr[i]){
+            return 'Acertei'
+        }else{
+            return 'Não é quem eu pensava'
+        }
+    }
+
+}
+
+console.log(testaNome('Carla',3 ));

@@ -7,12 +7,9 @@ function fibonacciNumbers(x){
         console.log(proximo);
         anterior = atual + proximo;
         atual = proximo;
-        proximo = anterior;
-        
+        proximo = anterior;       
        
-    }
-    
-   
+    }   
 }
 console.log(fibonacciNumbers(15));
 

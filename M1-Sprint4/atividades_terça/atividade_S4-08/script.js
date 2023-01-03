@@ -72,7 +72,7 @@ function subString(textoSub, posicaoInicial, posicaoFinal){
   
 
 }
-console.log(subString('Mozilla', 0, 4));
+console.log(subString('Chrome', 3, 5));
 
 //EXERCÍCIO 6
 console.log('============================EXERCÍCIO 6============================');
@@ -102,4 +102,4 @@ function stringCentralizer(palavraString, qtdRepete, elementoRepeticao){
 }
 
 
-console.log(stringCentralizer('JavaScript', 8, "#"));
+console.log(stringCentralizer('JavaScript', 5, "$"));

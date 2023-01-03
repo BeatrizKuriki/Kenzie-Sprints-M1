@@ -43,7 +43,7 @@ let arrayB = Array(10);
 
 function retornaListaC(arrayA, arrayB){    
     for(let i =0; i<= 10; i++){
-        if(%2==0 && i%3==0){
+        if(i%2==0 && i%3==0){
             console.log(arrayA += i);
 
         }
