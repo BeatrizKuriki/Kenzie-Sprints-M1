@@ -15,7 +15,7 @@ function retornaTodosElementos(){
 
 console.log((retornaTodosElementos()));
 
-console.log('===========================EXERCÍCIO 2============================================');
+console.log('====================EXERCÍCIO 2============================');
 //EXERCÍCIO 2
 function retornaValorEspecífico(num){
     let valor;
@@ -29,7 +29,7 @@ function retornaValorEspecífico(num){
 }
 console.log(retornaValorEspecífico(5));
 
-console.log('===========================EXERCÍCIO 3============================================');
+console.log('======================EXERCÍCIO 3==========================');
 //EXERCÍCIO 3
 function retornarTipoElemento(n){
     let tipo;
@@ -42,11 +42,11 @@ function retornarTipoElemento(n){
     return ` O elemento ${n} é um elemento do tipo:`+typeof tipo;
 
 }
-console.log(retornarTipoElemento(0));
+console.log(retornarTipoElemento(5));
 
 
 
-console.log('===========================EXERCÍCIO 4============================================');
+console.log('====================EXERCÍCIO 4============================');
 //EXERCÍCIO 4
 function removeUltimoElementoString(){
     let ultimoElemento = listaDeElementos[listaDeElementos.length-1];
@@ -59,7 +59,7 @@ function removeUltimoElementoString(){
 }
     console.log(removeUltimoElementoString());
 
-console.log('===========================EXERCÍCIO 5============================================');
+console.log('====================EXERCÍCIO 5============================');
 //EXERCÍCIO 5
 
 function consultaPosicao(valor){
@@ -74,9 +74,9 @@ function consultaPosicao(valor){
      return 'Valor não encontrado'
 }
 
-console.log(consultaPosicao(9));
+console.log(consultaPosicao(15));
 
-console.log('===========================EXERCÍCIO 6============================================');
+console.log('===================EXERCÍCIO 6=============================');
 //EXERCÍCIO 6
 function removerElementoEspecifico(el){
     let indexElemento;
@@ -96,7 +96,7 @@ console.log(removerElementoEspecifico(1));
 
 
 
-console.log('===========================EXERCÍCIO 7============================================');
+console.log('=======================EXERCÍCIO 7==================================');
 //EXERCÍCIO 7
 
 function inserirNaPosicaoCorreta(insereValor){
@@ -109,7 +109,7 @@ function inserirNaPosicaoCorreta(insereValor){
 }
     
 
-console.log(inserirNaPosicaoCorreta(2));
+console.log(inserirNaPosicaoCorreta('2'));
 console.log(listaDeElementos);
 
 
