@@ -1,12 +1,14 @@
 //EXERCÍCIO 1
 console.log('=====================EXERCÍCIO 1============================');
 function geraArray (palavra){
-    let palavraNova = palavra.split('');
-  
-    
-    return palavraNova;
-}
+    let palavraNova =  palavra;
+        if(palavraNova.length < 5){
+            return 'a palavra deve ter no mímino 5 caracteres'
+        }else{
+            return '['+palavraNova+']';
+      } 
    
+}
 
 
 console.log(geraArray('leite'));
@@ -37,6 +39,15 @@ console.log(acessaElemento(2));
 
 //EXERCÍCIO 3
 console.log('=====================EXERCÍCIO 3============================');
+
+// Crie um array de números, contendo os valores de 1 a 10.
+//  Crie uma função que recebe um número inteiro.
+
+// Acesse a posição do array de números usando o valor recebido. 
+// Teste se o valor contido na posição é par ou ímpar.
+
+// Caso seja par retorne: "O valor encontrado nesta posição é par",
+// Caso seja ímpar retorne: "O valor encontrado nesta posição é ímpar".
 let arr2 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 function testeParImpar(numero) {
 
@@ -47,43 +58,31 @@ function testeParImpar(numero) {
             return 'Valor par'
         }else{
             return 'Valor impar'
-        }      
-        
+        }           
 
-    }    
-
+    }  
 }
 
-console.log(testeParImpar(1));
+console.log(testeParImpar(3));
 
 
 //EXERCÍCIO 4
 console.log('=====================EXERCÍCIO 4============================');
 
-let nomes1 =['Pedro', 'Rafael', 'José'];
+let nomes1 =['Pedro', 'Rafael', 'José', "Josefina"];
 
 function quantidadeCaractere(arr){
-    let maior = 0;
-    for(let i =0; i<= arr.length-1; i++){
-       console.log(arr[i])
-       if(arr[0].length > 0){
-        maior = arr[0];
-       } else if(arr[1].length > arr[0].length){
-        maior = arr[i]
-
-       }
-
-        }
-        console.log("-----"+maior+"-------")
-
+    arr.sort((a, b) => a.length - b.length)
+    return ` O nome ${arr[arr.length-1]} é o maior da lista`
+  
     } 
 
 
-quantidadeCaractere(nomes1);
+console.log(quantidadeCaractere(nomes1));
 
 //EXERCÍCIO 5
 console.log('=====================EXERCÍCIO 5============================');
-numeros = [1,4,6,9,12,8];
+let numeros2 = [1,4,6,9,11,8];
 
 function soma(arr){
     let soma = 0;
@@ -101,24 +100,44 @@ function soma(arr){
 }
 
 
-console.log(soma(numeros));
+console.log(soma(numeros2));
 
 //EXERCÍCIO 6
 console.log('=====================EXERCÍCIO 6============================');
 
 let arrNomes = ['Pedro', 'Rafael', 'José', 'Carla', 'Maria', 'Josef', 'Raquel'];
 
-function testaNome(nome, num){
-    arr = arrNomes;
-    let verificaNome;
-    for(let i =0; i<=arr.length; i++){
-        if(verificaNome == arr[i]){
-            return 'Acertei'
-        }else{
-            return 'Não é quem eu pensava'
-        }
+function testaNome(arrNomes,nome, posicao){
+   if(posicao >= 0 && posicao < arrNomes.length){
+    let nomePosicao = arrNomes[posicao];
+    let nomeFormatado = nome.toLowerCase().trim()
+    let nomePosicaoFormatado = nomePosicao.toLowerCase().trim()
+    if(nomeFormatado === nomePosicaoFormatado){
+        return 'Acertei'
+    }else{
+        return 'Não é quem eu pensava'
     }
+   }
 
 }
 
-console.log(testaNome('Carla',3 ));
+console.log(testaNome(arrNomes,'Carla',2 ));
+console.log(testaNome(arrNomes,'Pedro',0));
+
+
+//EXERCÍCIO 7
+console.log('=====================EXERCÍCIO 7============================');
+ let numeros = [1,2,3,4,5,6,10,13,15]
+ let outrosNumeros = [5,7,9,4,2,3,9,12]
+ function comparaArray(lista1, lista2){
+    if(lista1.length > lista2.length){
+        return `A maior lista é aquela que o último número é: ${lista1[lista1.length-1]}`
+    }else{
+        return `A maior lista é aquela que o último número é: ${lista2[lista2.length-1]}`
+    }
+
+ }
+
+ console.log(comparaArray(numeros, outrosNumeros));
+
+
